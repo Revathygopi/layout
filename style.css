@@ -2,7 +2,10 @@ body,
 html {
 
     height: 100%;
-    margin: 0px
+    margin: 0px;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
 }
 
 .form {
@@ -16,75 +19,108 @@ html {
     height: 100%;
     background-color: rgb(12, 143, 99);
     color:white;
+    box-sizing: border-box;
     
 }
 
 
-a{
+.left a{
+    padding-top:250px;
     color:white;
-    padding: 100px 20px;
+    position: relative;
+    top:20px;
+    left:20px;
+    text-decoration: none;
 }
+
 
 .welcome{
 
     color:white;
-    padding:90px 80px 0px 80px;
-    font-size:x-large;
+    position:relative;
+    top:200px;
+    text-align: center;
+    
 
 }
 .description{
     color:white;
-    padding:0px 30px 0px 30px;
+    position:relative;
+    top:205px;
+    text-align: center;
 }
 .btn{
     background-color:rgb(12, 143, 99);
     color:white;
-    margin: 70px 40px ;
-    padding:10px 50px;
+
+   position:relative;
+   top:250px;
+   left:90px;
+   padding:10px 50px;
     border-radius:20px;
     border:1px solid white;
     font-size:1.2 em;
 }
-/*.image img
-{
-    width:20px;
-    height:10px;
-    display:inline;
-    padding:150px 10px;
-    
-}*/
+
 .right {
     width: 75%;
     background-color: white;
     color: rgb(12, 143, 99);
-    padding: 50px;
-    text-align: center;
-    font-size:xx-large;
     
+}
+.account{
+    text-align:center;
+}
+
+.icons a{
+    color:black;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: center;
+    margin-inline-end: 30px;
+    position: relative;
+    top:5px;
+    
+   
 }
 .para{
     text-align:centre;
     color:black;
     font-size:medium;
     position:relative;
-    top:30px;
-}
-.regform
-{
-   position:relative;
-   top:50px; 
-   font-size: 1.1em;
-}
-
-.regform input{
-    width:35%;
-    height:20%;
-    background-color:beige;
-    color:black;
-
+    
+    
     
 }
 
+form[name="signup"] input{
+
+background-color: rgb(199, 231, 231);
+
+border:none;
+margin-block:1rem;
+padding:1rem;
+width: 424px;;
+border: radius 3px ;
+padding-left: 50px;
+margin-right: 100px;
+
+}
+form[name="signup"] input::placeholder{
+    color: rgb(129, 129, 161);
+}
+form[name="signup"] ,.icon>.bi
+{
+    font-size:2rem;
+    position: relative;
+    left: 50px;
+    top:7px;
+    color: black;
+    
+}
+.right{
+    text-align: center;
+}
 .bt-n{
     position:relative;
     top:30px;
